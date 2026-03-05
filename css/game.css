@@ -1,0 +1,42 @@
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr) ;
+    max-width: 800px;
+    gap: 15px;
+
+    margin: 100px auto;
+}
+
+.card{
+    aspect-ratio: 3/4;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face{
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+     background-size: cover;
+    background-position: center;
+}
+
+.front{
+    background-image: url('../imagens/africa_do_sul.jpg');
+    
+}
+
+.back{
+    background-image: url('../imagens/mapa.jpg');
+    background-size: cover;
+
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
