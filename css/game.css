@@ -28,12 +28,15 @@
 
 .front{
     background-image: url('../imagens/africa_do_sul.jpg');
-    
+     background-size: cover;
+    background-position: center;
 }
 
 .back{
     background-image: url('../imagens/mapa.jpg');
     background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
 
 }
 
